@@ -1,0 +1,2 @@
+### FORK NOTICE
+This is not an official fork. We do not claim to replace nor have aspirations of replacing [SuperbVote](https://github.com/astei/SuperbVote). You are welcome to compile this repo and use our fix/changes, but support is not gaurenteed.
