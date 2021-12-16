@@ -414,6 +414,14 @@ public class MysqlVoteStorage implements ExtendedVoteStorage {
     }
 
     @Override
+    public VoteStreak getVoteStreakIfSupported(UUID player, boolean required) {
+        if(SuperbVote.getPlugin().getConfiguration().getStreaksConfiguration().isEnabled()) {
+            return this.getVoteStreak(player, required);
+        }
+        return null;
+    }
+
+    @Override
     public void save() {
         // No-op
     }
